@@ -1,0 +1,444 @@
+body {
+	margin: 0;
+	background-color: #efeded;
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+}
+
+ul.slideshow {
+	list-style:none;
+	width:100%;
+	height:720px;
+	overflow:hidden;
+	position:relative;
+	margin:0;
+	padding:0;
+
+}
+
+ul.slideshow li {
+	position:absolute;
+	left:0;
+	right:0;
+}
+
+ul.slideshow li.show {
+}
+
+ul img {
+	border:none;
+}
+
+
+#slideshow-caption {
+	width:286px;
+	height:490px;
+	position:absolute;
+	top:0;
+	left:472px;
+	color:#fff;
+	background:#114e90;
+	z-index:1;
+	font-family:Roboto Slab;
+	font-size:18px;
+}
+
+#slideshow-caption .slideshow-caption-container {
+	padding:5px 10px;
+}
+
+#slideshow-caption h3 {
+	margin:0;
+	padding:0;
+	font-size:18px;
+}
+
+#slideshow-caption p {
+	margin: 5px 0 0 0;
+	padding-bottom: 72px;
+	padding-left: 22px;
+	padding-right: 22px;
+	position: absolute;
+	bottom: 0;
+}
+.content {
+	margin: auto;
+	width: 100%;
+}
+.st0 {
+	box-sizing: border-box;
+	padding: 22px;
+	font-family: Roboto Slab;
+	font-size: 18px;
+	color: white;
+	background: #11508D;
+	background: rgba(17, 80, 141, 1);
+	opacity: 0.85;
+	position: absolute;
+	top: 627px;
+	left: 1148px;
+	z-index: 3;
+	width: 284px;
+	height: 183px;
+	filter: alpha(opacity=85) progid:DXImageTransform.Microsoft.Alpha(opacity=85) ;
+}
+.headerlink {
+	position:absolute;
+	z-index:3;
+	left: 500px;
+	top: 440px;
+	font-family:Roboto;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 18px;
+	color: #ffb455;
+}
+.logopgu {
+	position: absolute;
+	z-index:2;
+	left: 488px;
+	top:30px;
+}
+
+.arrowlink {
+	padding-right: 8px;
+	position: relative;
+	top: 2px;
+}
+.headmenu {
+    width: 100%;
+    height: 90px;
+    background-color: #efefef;
+    position: relative;
+    z-index: 0;
+}
+.blueback {
+    width: 286px;
+    height: 90px;
+    background-color: #114e90;
+    opacity: 0.85;
+    left: 472px;
+    position: absolute;
+}
+.blueline {
+    width: 100%;
+    height: 4px;
+    background-color: #114e90;
+}
+.secondmenu {
+	right: 0;
+	padding-right: 482px;
+	padding-left: 0px;
+	position: absolute;
+	display: flex;
+	list-style: none;
+}
+.secondmenulink {
+	line-height: 56px;
+	font-family: Roboto medium;
+	font-size: 16px;
+	text-decoration: none;
+	color: #4e4f4f;
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: 1px solid #b2b2b2;
+	transition: 0.5s;
+}
+.secondmenulink:hover {
+	color: #0c81a8;
+	transition: all 0.5s;
+}
+.findbutton {
+	padding-top: 20px;
+	padding-left: 16px;
+}
+
+/*Новостной блок -->*/
+.news {
+	margin: 0 auto;
+	width: 960px;
+	left: 460px;
+	padding-top: 15px;
+}
+.bigpost {
+	position: relative;
+	width: 960px;
+	height: 440px;
+	background-color: white;
+}
+.bigpostimage {
+	display: inline-block;
+	vertical-align: top;
+}
+.bigpost p {
+	display: inline-block;
+	font-family: Roboto Slab;
+	font-size : 20px;
+	color : #11508D;
+}
+.bigpostext {
+	width: 292px;
+	display: inline-block;
+	padding-left: 36px;
+	padding-top: 16px;
+}
+.bigpostext text {
+	display: inline-block;
+	font-family: PT Sans;
+	font-size: 16px;
+	line-height: 22px;
+	color: #4D4E4E;
+}
+.readlater {
+	text-decoration: none;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 18px;
+    color: #11508D;
+	transition: all 0.5s;
+}
+.bluearrowlink {
+	padding-right: 8px;
+	position: relative;
+	top: 2px;
+	transition: all 0.5s;
+}
+.readlater:hover .bluearrowlink {
+	padding-right: 12px;
+}
+
+.container-3 {
+	position: absolute;
+	background-color: white;
+	width: 960px;
+	margin-top: 270px;
+	margin-bottom: 64px;
+}
+.container-3 h1 {
+	font-family: Roboto Slab;
+	font-weight: normal;
+    font-size: 20px;
+    color: #11508D;
+	text-align: center;
+	padding-top: 16px;
+	padding-bottom: 10px;
+}
+.container-3 p {
+	margin: 0 auto;
+	margin-bottom: 36px;
+	width: 900px;
+	font-family : PT Sans;
+	font-size: 16px;
+	line-height: 22px;
+	color: #4D4E4E;
+}
+/*<--Новостной блок*/
+
+/*Эффект наведения с полосой внизу*/
+.caption-style-2{
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 15px;
+	padding-left: 0;
+
+}
+.caption-style-2 .medpost-2 {
+	padding-left: 15px;
+}
+.caption-style-2 li{
+	float: left;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+}
+.caption-style-2 li:hover .caption{
+	opacity: 1;
+	transform: translateY(-195px);
+	-webkit-transform:translateY(-195px);
+	-moz-transform:translateY(-195px);
+	-ms-transform:translateY(-195px);
+	-o-transform:translateY(-195px);
+
+}
+.caption-style-2 img{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	z-index: 4;
+}
+.caption-style-2 .caption{
+	cursor: pointer;
+	position: absolute;
+	opacity: 8.5;
+	top: 195px;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+
+}
+.caption-style-2 .blur{
+	background-color: rgba(17,80,141,0.85);
+	height: 255px;
+	width: 472px;
+	z-index: 5;
+	position: absolute;
+}
+.caption-style-2 .caption-text h1{
+	font-family: Roboto Slab;
+	font-weight: normal;
+	font-size: 18px;
+	width: 440px;
+}
+.caption-style-2 .caption-text p {
+	font-family: PT Sans;
+	font-weight: normal;
+	text-align: left;
+	padding-left: 0px;
+}
+.caption-style-2 .caption-text{
+	z-index: 10;
+	color: #fff;
+	position: absolute;
+	width: 436px;
+	height: 255px;
+	top:8px;
+	left: 18px;
+}
+/*Эффект наведения с полосой внизу*/
+
+/*Футер*/
+.footer {
+	background : #11508D;
+	position : absolute ;
+	left : 0px;
+	top : 2240px;
+	width : 100%;
+	height : 128px;
+}
+.ul-1 {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding-left: 472px;
+	padding-top: 16px;
+}
+.ul-2 {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding-left: 232px;
+	padding-top: 16px;
+}
+.ul-2 li:last-child {
+}
+.footer ul li {
+	padding-bottom: 10px;
+}
+.footer ul li a img {
+	position: relative;
+	top: 2px;
+	padding-right: 8px;
+}
+.footer ul li a {
+	font-family : Roboto;
+	font-size : 12px;
+	text-decoration: none;
+	color : #D9D8D7;
+	transition: all 0.5s;
+}
+.footer ul li a:hover {
+	color: #fab156;
+}
+.silki {
+	background: #0880A7;
+	position: absolute ;
+	left: 472px;
+	top: 2200px;
+	width: 285px;
+	height: 40px;
+}
+.silki p {
+	margin: 0;
+	padding-top: 12px;
+	padding-left: 15px;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.kontaktnie {
+	text-align: center;
+	position: absolute ;
+	left: 757px;
+	top: 2200px;
+	width: 375px;
+	height: 40px;
+}
+.kontaktnie p {
+	margin: 0;
+	padding-top: 12px;
+	font-family : Roboto;
+	font-weight : bold;
+	font-size : 14px;
+	text-transform : uppercase;
+	color : #11508D;
+}
+.podpiska {
+	background : #0880A7;
+	position : absolute ;
+	left : 1133px;
+	top : 2200px;
+	width : 298px;
+	height : 168px;
+}
+.podpiska p {
+	margin: 0;
+	padding-top: 12px;
+	padding-left: 15px;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.podpiska input {
+	width: 238px;
+	margin-top: 26px;
+	margin-left: 18px;
+	display: inline-block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	padding: 8px 10px;
+	border: 2px solid #EFEDED;
+	font: italic normal normal 16px/normal "PT Sans", Times, serif;
+	font-size: 14px;
+	color: #9ad3d6;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	background: #0880A7;
+}
+.podpiska ul {
+	padding-top: 24px;
+	padding-left: 20px;
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+.podpiska ul li {
+	padding-right: 16px;
+	padding-left: 16px;
+}
+.ulpodpiska li:nth-child(2) {
+	line-height: 34px;
+}
+.ulpodpiska li:nth-child(4) {
+	line-height: 28px;
+}
+/*Футер*/
